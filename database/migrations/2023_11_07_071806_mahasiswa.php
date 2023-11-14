@@ -15,6 +15,7 @@ return new class extends Migration
             $table->string('nim',10)->primary();
             $table->string('nama');
             $table->string('alamat');
+            $table->timestamps();
         });
     }
 

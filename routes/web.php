@@ -27,8 +27,17 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/tampil1',[Controller1::class,'tampil1']);
-    Route::get('/tampilkan',[Controller1::class,'tampilkan']);
+
+    Route::get('/create',[Controller1::class, 'create']);
+    Route::post('/save',[Controller1::class, 'save']);
+
+    Route::get('/read',[Controller1::class, 'read']);
+    Route::get('/update/{nim}',[Controller1::class, 'update']);
+    Route::post('edit',[Controller1::class, 'edit']);
+
+    Route::get('/delete/{nim}',[Controller1::class, 'delete']);
+
+    Route::get('/view',[Controller1::class, 'view']);
 });
 
 Route::get('/logout',[Controller1::class,'logout']);
