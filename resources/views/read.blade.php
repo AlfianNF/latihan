@@ -24,6 +24,10 @@
                             <th>NIM</th>
                             <th>NAMA</th>
                             <th>ALAMAT</th>
+                            <th>UMUR</th>
+                            <th>KOTA</th>
+                            <th>KELAS</th>
+                            <th>JURUSAN</th>
                             <th>CREATED AT</th>
                             <th>UPDATED AT</th>
                             <th>ACTION</th>
@@ -48,6 +52,18 @@
                                 echo "</td>";
                                 echo "<td>";
                                 echo $datax->alamat;
+                                echo "</td>";
+                                echo "<td>";
+                                echo $datax->umur;
+                                echo "</td>";
+                                echo "<td>";
+                                echo $datax->kota;
+                                echo "</td>";
+                                echo "<td>";
+                                echo $datax->kelas;
+                                echo "</td>";
+                                echo "<td>";
+                                echo $datax->jurusan;
                                 echo "</td>";
                                 echo "<td>";
                                 echo $datax->created_at;

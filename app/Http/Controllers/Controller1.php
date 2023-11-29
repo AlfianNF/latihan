@@ -78,12 +78,17 @@ class Controller1 extends Controller
 
     public function save(Request $request)
     {
+
         $model = new Mahasiswa();
 
         $model::insert([
             'nim' => $request->nim,
             'nama' => $request->nama,
+            'umur' => $request->umur,
             'alamat' => $request->alamat,
+            'kota' => $request->kota,
+            'kelas' => $request->kelas,
+            'jurusan' => $request->jurusan,
             'created_at' => Carbon::now('Asia/Jakarta'),
         ]);
 
@@ -111,7 +116,15 @@ class Controller1 extends Controller
     public function tampilkan(Request $request){
         // Simpan data yang diinputkan ke dalam database
         $model = new Mahasiswa();
-        $model::insert(['nim' => $request->nim, 'nama' => $request->nama, 'alamat' => $request->alamat]);
+        $model::insert([
+            'nim' => $request->nim, 
+            'nama' => $request->nama, 
+            'alamat' => $request->alamat,
+            'umur' => $request->umur,
+            'kota' => $request->kota,
+            'kelas' => $request->kelas,
+            'jurusan' => $request->jurusan,
+        ]);
 
         // Ambil semua data Mahasiswa
         $mahasiswa = Mahasiswa::all();

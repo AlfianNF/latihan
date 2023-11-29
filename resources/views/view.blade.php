@@ -25,7 +25,27 @@
                             <th scope="row">3</th>
                             <td>Alamat</td>
                             <td>{{ $data['alamat'] }}</td>
-                        </tr>                       
+                        </tr>       
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Umur</td>
+                            <td>{{ $data['umur'] }}</td>
+                        </tr>    
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Kota</td>
+                            <td>{{ $data['kota'] }}</td>
+                        </tr>     
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Kelas</td>
+                            <td>{{ $data['kelas'] }}</td>
+                        </tr>   
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Jurusan</td>
+                            <td>{{ $data['jurusan'] }}</td>
+                        </tr>        
                     </tbody>
                 </table>
             </center>

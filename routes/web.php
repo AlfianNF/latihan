@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller1;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UploadController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/delete/{nim}',[Controller1::class, 'delete']);
 
     Route::get('/view',[Controller1::class, 'view']);
+
+    Route::get('/upload',[UploadController::class, 'upload']);
+    Route::post('/upload/proses',[UploadController::class,'proses_upload']);
 });
 
 Route::get('/logout',[Controller1::class,'logout']);

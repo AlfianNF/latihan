@@ -34,6 +34,22 @@
                         Alamat
                         <input type="text" id="alamat" name="alamat" class="form-control" value="{{ $data->alamat }}">
                     </div>
+                    <div class="form-group mb-3">
+                        Umur
+                        <input type="text" id="umur" name="umur" class="form-control" value="{{ $data->umur }}">
+                    </div>
+                    <div class="form-group mb-3">
+                        Kota
+                        <input type="text" id="kota" name="kota" class="form-control" value="{{ $data->kota }}">
+                    </div>
+                    <div class="form-group mb-3">
+                        Kelas
+                        <input type="text" id="kelas" name="kelas" class="form-control" value="{{ $data->kelas }}">
+                    </div>
+                    <div class="form-group mb-3">
+                        Jurusan
+                        <input type="text" id="jurusan" name="jurusan" class="form-control" value="{{ $data->jurusan }}">
+                    </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
